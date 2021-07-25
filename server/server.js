@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 const Document = require("./Document")
-
+console.log('server.js running...');
 mongoose.connect("mongodb://localhost/google-docs-clone", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
