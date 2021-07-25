@@ -6,7 +6,11 @@ mongoose.connect("mongodb://localhost/google-docs-clone", {
   useUnifiedTopology: true,
   useFindAndModify: false,
   useCreateIndex: true,
+  ignoreUndefined: true,
+  user:"test",
+  pass:"test"
 })
+
 
 const io = require("socket.io")(3001, {
   cors: {
